@@ -1,0 +1,141 @@
+"use client";
+import Image from "next/image";
+import { useState } from "react";
+import { motion, AnimatePresence  } from "framer-motion";
+import Projet1 from "./detail/projet1";
+import Projet2 from "./detail/projet2";
+import Projet3 from "./detail/projet3";
+import Projet4 from "./detail/projet4";
+import Projet5 from "./detail/projet5";
+import Projet6 from "./detail/projet6";
+import Experience1 from "./detail/esperience1";
+import Experience6 from "./detail/experience6";
+import Experience2 from "./detail/esperience2";
+import Experience3 from "./detail/esperience3";
+import Experience4 from "./detail/esperience4";
+import Experience5 from "./detail/esperience5";
+export default function Home() {
+  const [selected, setSelected] = useState<number | null>(null);
+
+  return (
+    
+    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans azure">
+      <main className={`box flex min-h-screen w-full max-w-7xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start transition-all duration-300 ${selected ? "blur-md pointer-events-none" : ""}`}>
+        <h1 className="text-5xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
+            Projets réalisé 
+        </h1>
+        
+        <div className="info flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">  
+          <motion.div 
+          onClick={() => setSelected(1)}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.9 }}
+          className="box2 flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
+              <h1 className=" text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">Application-Ent-avignon </h1>
+              <p>une application qui me permet de regarder mon emploie du temps ou mail</p>
+          </motion.div>
+          <motion.div  
+          
+          onClick={() => setSelected(2)}
+          whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} 
+          className="box2 flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
+              <h1 className=" text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">liste-3D-dysplate </h1>
+              <p>une application où je test le Reals sur android studio</p>
+          </motion.div>
+          <motion.div  
+          onClick={() => setSelected(3)}
+          whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} 
+          className="box2 flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
+              <h1 className=" text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">gestion-des-finances </h1>
+              <p>une application android et web, qui permet de gérer les finance</p>
+          </motion.div>
+          <motion.div  
+          onClick={() => setSelected(4)}
+          whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} 
+          className="box2 flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
+              <h1 className=" text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">Market place</h1>
+              <p>un site web qui nous permet de faire des achat pour bricolage(premier projet sans expériences)</p>
+          </motion.div>
+        </div>
+        <div>
+        <br />
+        <br />
+        </div>
+        <h1 className=" text-5xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
+            Experiences profesionnel 
+        </h1>
+        <div className="info flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
+          
+          <motion.div  
+          onClick={() => setSelected(7)}
+          whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} 
+          className="box2 flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
+              <h1 className=" text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">Stage développeur web 1mois</h1>
+              <p>un stage realiser chez Défiez le cube</p>
+          </motion.div>
+          <motion.div  
+          onClick={() => setSelected(8)}
+          whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} 
+          className="box2 flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
+              <h1 className=" text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">Poissonerie job été (total 4mois)</h1>
+              <p>servir les client, propreter du rayon, gérer le stock du rayon, fermeture/ouverture</p>
+          </motion.div>
+          <motion.div 
+          onClick={() => setSelected(9)}
+          whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} 
+          className="box2 flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
+              <h1 className=" text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">agent de production</h1>
+              <p>mettre des bouchant sur des bouteilles et surveiller le bon fonctionnement de la machine</p>
+          </motion.div>
+          <motion.div 
+          onClick={() => setSelected(10)}
+          whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} 
+          className="box2 flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
+              <h1 className=" text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">agent de production</h1>
+              <p>contrat de travail temporaire qui consistait a ramasser des cerises ou abricot.</p>
+          </motion.div>
+        </div>
+      </main>
+      <AnimatePresence>
+        {selected && (
+          <motion.div
+            key="sidebar"
+            initial={{ x: "100%" }}
+            animate={{ x: 0 }}
+            exit={{ x: "100%" }}
+            transition={{ type: "spring", stiffness: 300, damping: 30 }}
+            className="absolute top-0 right-0 w-1/3 h-full bg-slate-800 p-6 shadow-lg z-50"
+          >
+            {/* Bouton fermer */}
+            <button
+              onClick={() => setSelected(null)}
+              className="text-white text-xl font-bold mb-4"
+            >
+              ✕
+            </button>
+
+            {/* Détails du projet */}
+            {
+              {
+                '1': <Projet1/>,
+                '2': <Projet2/>,
+                '3': <Projet3/>,
+                '4': <Projet4/>,
+                '5': <Projet5/>,
+                '6': <Projet6/>,
+                '7': <Experience1/>,
+                '8': <Experience2/>,
+                '9': <Experience3/>,
+                '10': <Experience4/>,
+                '11': <Experience5/>,
+                '12': <Experience6/>,
+              }[selected] || <div>Fallback (par défaut)</div>
+            }
+            
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+    
+  );
+}
