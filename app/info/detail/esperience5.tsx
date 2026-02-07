@@ -1,16 +1,16 @@
 export default function Experience5(){
 
     return(
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
+        <div className="flex flex-col items-start gap-2 ">
+          <h1 className="text-xl font-bold text-white mb-2">
             Details d'experience
           </h1>
-          <h2 className="max-w-xs text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
+          <h2 className="inline-block mb-3 px-3 py-1 text-zinc-300 rounded-lg hover:bg-white hover:text-black transition-all text-xs font-bold">
             projet</h2>
-          <p className="min-w-md  leading-8 text-zinc-600 dark:text-zinc-400">
-            Développeur passionné de programmations. Ambitieux et rigoureux, 
+          <p className="whitespace-pre-line text-sm leading-relaxed text-zinc-400">
+            {`Développeur passionné de programmations. Ambitieux et rigoureux, 
             je suis motivé à enrichir mes expériences 
-            et pouvoir apprendre toujours plus sur les métiers lier à l’informatique.
+            et pouvoir apprendre toujours plus sur les métiers lier à l’informatique.`}
           </p>
         </div>
     )
