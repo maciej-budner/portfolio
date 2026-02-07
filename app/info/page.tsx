@@ -101,7 +101,7 @@ export default function Home() {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
-            className="img2 fixed top-0 right-0 w-full sm:w-2/4 h-auto bg-slate-800 p-4 sm:p-6 shadow-lg z-50 overflow-y-auto "
+            className="img2 fixed top-0 right-0 w-full sm:w-3/5 h-auto bg-slate-800 p-4 sm:p-6 shadow-lg z-50 overflow-y-auto "
           >
             {/* Bouton fermer */}
             <button
