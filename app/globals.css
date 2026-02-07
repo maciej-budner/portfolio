@@ -37,10 +37,10 @@ body {
 }
 .info {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    margin-top: 20px;
+    /* auto-fit permet de passer à la ligne automatiquement au lieu de zoomer */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 15px;
     width: 100%;
-    gap: 10px;
 }
 
 .img1 {
