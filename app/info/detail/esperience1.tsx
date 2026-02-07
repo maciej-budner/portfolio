@@ -2,12 +2,12 @@ export default function Experience1(){
 
     return(
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
+          <h1 className="max-w-xs text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             Details d'experience
           </h1>
-          <h2 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
+          <h2 className="max-w-xs text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             Stage développeur web 1mois</h2>
-          <p className="min-w-xl text-base leading-6 text-zinc-600 dark:text-zinc-400">
+          <p className="min-w-xl leading-6 text-zinc-600 dark:text-zinc-400">
             J'ai réaliser se stage a Avignon chez Defiez le cube.
             Une entreprise ludique, dans le but est de réaliser plusieur énigme dans un temps répartie.
             Une sorte de escape game.

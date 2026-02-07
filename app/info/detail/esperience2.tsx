@@ -2,12 +2,12 @@ export default function Experience2(){
 
     return(
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
+          <h1 className="max-w-xs text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             Details d'experience
           </h1>
-          <h2 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
+          <h2 className="max-w-xs text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             Poissonerie job été (total 4mois)</h2>
-          <p className="min-w-xl text-base leading-6 text-zinc-600 dark:text-zinc-400">
+          <p className="min-w-xl  leading-6 text-zinc-600 dark:text-zinc-400">
             Pour l'été, j'ai travailler chez Lecler en temps que poisonier pendant 4mois. (répartis sur deux périodes estivales)<br/>
             Mission:<br/>
             - Gestion opérationnelle : Mise en rayon matinale et organisation rigoureuse du stockage en chambre froide le soir, en respectant la chaîne du froid.

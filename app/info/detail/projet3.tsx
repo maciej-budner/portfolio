@@ -2,13 +2,13 @@ export default function Projet3(){
 
     return(
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="min-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
+          <h1 className="min-w-xs text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             Details du projet
           </h1>
           < a href="https://github.com/maciej-budner/gestion-des-finances" className="px-4 py-2 border border-zinc-500 text-zinc-300 rounded-lg hover:bg-zinc-100 hover:text-zinc-900 transition-colors duration-200 text-sm font-medium">
-          <h2 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
+          <h2 className="max-w-xs text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             gestion-des-finances</h2></a>
-          <p className="min-w-xl text-base leading-6 text-zinc-600 dark:text-zinc-400">
+          <p className="min-w-xl  leading-6 text-zinc-600 dark:text-zinc-400">
             Concept : Migration et évolution mobile d'une application web de gestion financière (initialement conçue en mode Agile avec NextJS).
       <br/>
             Réalisations techniques :

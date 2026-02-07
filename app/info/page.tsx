@@ -19,19 +19,19 @@ export default function Home() {
 
   return (
     
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50  azure p-4">
-      <main className={`img1 box flex h-auto w-full max-w-4xl flex-col items-center py-8 px-8 bg-white dark:bg-black sm:items-start transition-all duration-300 ${selected ? "blur-md pointer-events-none" : ""}`}>
-        <h1 className="text-5xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
+    <div className="flex min-h-screen h-auto items-center justify-center bg-zinc-50  azure p-4">
+      <main className={`img1 box flex h-auto w-full max-w-2xl flex-col items-center py-8 px-8 bg-white dark:bg-black sm:items-start transition-all duration-300 ${selected ? "blur-md pointer-events-none" : ""}`}>
+        <h1 className="text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             Projets réalisé 
         </h1>
         
-        <div className="info flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">  
+        <div className="info flex flex-col items-center text-center sm:items-start sm:text-left">  
           <motion.div 
           onClick={() => setSelected(1)}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.9 }}
           className="box2 flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-              <h1 className=" text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">Application-Ent-avignon </h1>
+              <h1 className=" text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">Application-Ent-avignon </h1>
               <p>Une application qui me permet de consulter mon emploi du temps et mes mails</p>
           </motion.div>
           <motion.div  
@@ -39,21 +39,21 @@ export default function Home() {
           onClick={() => setSelected(2)}
           whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} 
           className="box2 flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-              <h1 className=" text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">liste-3D-dysplate </h1>
+              <h1 className=" text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">liste-3D-dysplate </h1>
               <p>une application où je teste le Reals sur android studio</p>
           </motion.div>
           <motion.div  
           onClick={() => setSelected(3)}
           whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} 
           className="box2 flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-              <h1 className=" text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">gestion-des-finances </h1>
+              <h1 className=" text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">gestion-des-finances </h1>
               <p>Une application Android et web qui permet de gérer les finances</p>
           </motion.div>
           <motion.div  
           onClick={() => setSelected(4)}
           whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} 
           className="box2 flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-              <h1 className=" text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">Market place</h1>
+              <h1 className=" text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">Market place</h1>
               <p>Un site web qui permet de faire des achats de bricolage (premier projet sans expérience)</p>
           </motion.div>
         </div>
@@ -61,37 +61,37 @@ export default function Home() {
         <br />
         <br />
         </div>
-        <h1 className=" text-5xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
+        <h1 className=" text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             Experiences profesionnel 
         </h1>
-        <div className="info flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
+        <div className="info flex flex-col items-center text-center sm:items-start sm:text-left">
           
           <motion.div  
           onClick={() => setSelected(7)}
           whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} 
           className="box2 flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-              <h1 className=" text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">Stage développeur web 1mois</h1>
+              <h1 className=" text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">Stage développeur web 1mois</h1>
               <p>Un stage réalisé chez Défiez le cube</p>
           </motion.div>
           <motion.div  
           onClick={() => setSelected(8)}
           whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} 
           className="box2 flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-              <h1 className=" text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">Poissonerie job été (total 4mois)</h1>
+              <h1 className=" text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">Poissonerie job été (total 4mois)</h1>
               <p>Service à la clientèle, entretien du rayon, gestion des stocks, ouverture et fermeture du magasin</p>
           </motion.div>
           <motion.div 
           onClick={() => setSelected(9)}
           whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} 
           className="box2 flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-              <h1 className=" text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">Agent de production</h1>
+              <h1 className=" text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">Agent de production</h1>
               <p>Pose de bouchons sur des bouteilles et surveillance du bon fonctionnement des machines</p>
           </motion.div>
           <motion.div 
           onClick={() => setSelected(10)}
           whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} 
           className="box2 flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-              <h1 className=" text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">Ouvrier Agricole</h1>
+              <h1 className=" text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">Ouvrier Agricole</h1>
               <p>Contrat de travail temporaire consistant à la cueillette de cerises et d'abricots.</p>
           </motion.div>
         </div>
