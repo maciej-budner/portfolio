@@ -42,10 +42,10 @@ body {
 .info {
     display: grid;
     /* Auto-fit : crée 3 colonnes sur PC, mais passe à 1 seule sur mobile */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
     gap: 20px;
     width: 100%;
-    max-width: 100%;
+    min-width: 100%;
 }
 
 .img1 {

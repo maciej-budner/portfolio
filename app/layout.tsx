@@ -3,9 +3,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 export const viewport = {
-  width: 450, 
+  width: 'device-width',
   initialScale: 1,
-  userScalable: false, 
+  maximumScale: 1,
 }
 
 const geistSans = Geist({
