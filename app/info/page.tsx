@@ -20,7 +20,7 @@ export default function Home() {
   return (
     
     <div className="flex min-h-screen h-auto items-center justify-center bg-zinc-50  azure p-4">
-      <main className={`img1 box flex h-auto w-full max-w-2xl flex-col items-center py-4 px-6 bg-white dark:bg-black sm:items-start transition-all duration-300 ${selected ? "blur-md pointer-events-none" : ""}`}>
+      <main className={`img1 box flex h-auto w-full max-w-4xl flex-col items-center py-4 px-6 bg-white dark:bg-black sm:items-start transition-all duration-300 ${selected ? "blur-md pointer-events-none" : ""}`}>
         <h1 className="text-xl font-bold mb-4 text-black dark:text-zinc-50">
             Projets réalisé 
         </h1>
