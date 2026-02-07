@@ -10,12 +10,10 @@ export default function Projet3(){
             gestion-des-finances</h2></a>
           <p className="whitespace-pre-line text-sm leading-relaxed text-zinc-400">
             {`Concept : Migration et évolution mobile d'une application web de gestion financière (initialement conçue en mode Agile avec NextJS).
-      
             Réalisations techniques :
                 - Interface Dynamique : Implémentation d'une navigation fluide par gestes via ViewPager et synchronisation avec un TabLayout.
                 - Data Visualization : Création de graphiques circulaires (PieChart) pour une analyse visuelle immédiate des dépenses.
                 - Interopérabilité : Développement d'un module de communication avec des fichiers Excel pour l'import/export de données comptables.
-
             Analyses et perspectives :
                 - Optimisation des flux : Identification d'une latence (environ 3s) liée aux processus de vérification de l'état des fichiers (E/S) lors du lancement.
                 - Réflexion Architecture : Analyse des limites du développement natif (Android Studio) pour un déploiement multiplateforme (iOS).
