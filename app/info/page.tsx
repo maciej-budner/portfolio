@@ -20,7 +20,7 @@ export default function Home() {
   return (
     
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans azure">
-      <main className={`box flex min-h-screen w-full max-w-7xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start transition-all duration-300 ${selected ? "blur-md pointer-events-none" : ""}`}>
+      <main className={`img1 box flex min-h-screen w-full max-w-7xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start transition-all duration-300 ${selected ? "blur-md pointer-events-none" : ""}`}>
         <h1 className="text-5xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             Projets réalisé 
         </h1>
@@ -32,7 +32,7 @@ export default function Home() {
           whileTap={{ scale: 0.9 }}
           className="box2 flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
               <h1 className=" text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">Application-Ent-avignon </h1>
-              <p>une application qui me permet de regarder mon emploie du temps ou mail</p>
+              <p>Une application qui me permet de consulter mon emploi du temps et mes mails</p>
           </motion.div>
           <motion.div  
           
@@ -40,21 +40,21 @@ export default function Home() {
           whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} 
           className="box2 flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
               <h1 className=" text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">liste-3D-dysplate </h1>
-              <p>une application où je test le Reals sur android studio</p>
+              <p>une application où je teste le Reals sur android studio</p>
           </motion.div>
           <motion.div  
           onClick={() => setSelected(3)}
           whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} 
           className="box2 flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
               <h1 className=" text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">gestion-des-finances </h1>
-              <p>une application android et web, qui permet de gérer les finance</p>
+              <p>Une application Android et web qui permet de gérer les finances</p>
           </motion.div>
           <motion.div  
           onClick={() => setSelected(4)}
           whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} 
           className="box2 flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
               <h1 className=" text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">Market place</h1>
-              <p>un site web qui nous permet de faire des achat pour bricolage(premier projet sans expériences)</p>
+              <p>Un site web qui permet de faire des achats de bricolage (premier projet sans expérience)</p>
           </motion.div>
         </div>
         <div>
@@ -71,28 +71,28 @@ export default function Home() {
           whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} 
           className="box2 flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
               <h1 className=" text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">Stage développeur web 1mois</h1>
-              <p>un stage realiser chez Défiez le cube</p>
+              <p>Un stage réalisé chez Défiez le cube</p>
           </motion.div>
           <motion.div  
           onClick={() => setSelected(8)}
           whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} 
           className="box2 flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
               <h1 className=" text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">Poissonerie job été (total 4mois)</h1>
-              <p>servir les client, propreter du rayon, gérer le stock du rayon, fermeture/ouverture</p>
+              <p>Service à la clientèle, entretien du rayon, gestion des stocks, ouverture et fermeture du magasin</p>
           </motion.div>
           <motion.div 
           onClick={() => setSelected(9)}
           whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} 
           className="box2 flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-              <h1 className=" text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">agent de production</h1>
-              <p>mettre des bouchant sur des bouteilles et surveiller le bon fonctionnement de la machine</p>
+              <h1 className=" text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">Agent de production</h1>
+              <p>Pose de bouchons sur des bouteilles et surveillance du bon fonctionnement des machines</p>
           </motion.div>
           <motion.div 
           onClick={() => setSelected(10)}
           whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} 
           className="box2 flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-              <h1 className=" text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">agent de production</h1>
-              <p>contrat de travail temporaire qui consistait a ramasser des cerises ou abricot.</p>
+              <h1 className=" text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">Ouvrier Agricole</h1>
+              <p>Contrat de travail temporaire consistant à la cueillette de cerises et d'abricots.</p>
           </motion.div>
         </div>
       </main>
@@ -104,7 +104,7 @@ export default function Home() {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
-            className="absolute top-0 right-0 w-1/3 h-full bg-slate-800 p-6 shadow-lg z-50"
+            className="img2 fixed top-0 right-0 w-1/3 h-screen bg-slate-800 p-6 shadow-lg z-50 "
           >
             {/* Bouton fermer */}
             <button
