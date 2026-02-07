@@ -19,8 +19,8 @@ export default function Home() {
 
   return (
     
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50  azure">
-      <main className={`img1 box flex min-h-screen w-full max-w-2xl flex-col items-center justify-between py-8 px-8 bg-white dark:bg-black sm:items-start transition-all duration-300 ${selected ? "blur-md pointer-events-none" : ""}`}>
+    <div className="flex min-h-screen items-center justify-center bg-zinc-50  azure p-4">
+      <main className={`img1 box flex h-auto w-full max-w-4xl flex-col items-center py-8 px-8 bg-white dark:bg-black sm:items-start transition-all duration-300 ${selected ? "blur-md pointer-events-none" : ""}`}>
         <h1 className="text-5xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             Projets réalisé 
         </h1>
