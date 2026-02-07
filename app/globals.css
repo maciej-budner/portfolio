@@ -36,11 +36,8 @@ body {
   background-color: #0f172a;
 }
 .info {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    margin-top: 20px;
-    width: 100%;
-    gap: 10px;
+  display: flex !important;
+  flex-direction: column !important;
 }
 
 .img1 {
