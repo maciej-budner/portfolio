@@ -33,8 +33,10 @@ body {
   border: 2px solid white;
 }
 .box2 {
-  border: 5px solid #1c2a4d;
+  border: 2px solid #1c2a4d;
   background: #0f172a;
+  border-radius: 8px;
+  min-height: 80px;
 }
 .azure{
   background-color: #0f172a;
@@ -42,16 +44,17 @@ body {
 .info {
     display: grid;
     /* Auto-fit : crée 3 colonnes sur PC, mais passe à 1 seule sur mobile */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-    gap: 20px;
-    
-    
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 12px;
+    width: 100%;
+
 }
 
 .img1 {
   position: relative; /* Indispensable pour placer l'image par rapport au bloc */
   overflow: hidden;   /* Évite que l'image ne dépasse du cadre */
   min-height: 300px; /* Force une hauteur pour le test */
+  min-height: auto;
   width: 100%;
 
   z-index: 1;
