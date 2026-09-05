@@ -27,6 +27,14 @@ export default function Home() {
         
         <div className="info w-full grid grid-cols-2 gap-3">  
           <motion.div 
+          onClick={() => setSelected(5)}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.9 }}
+          className="box2 p-3 flex flex-col items-start gap-1 cursor-pointer">
+              <h1 className=" text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">Application-Off-Ligne-Game </h1>
+              <p>Une application avec des mini-jeux complexes en concevant un diagramme de classes respectant les principes SOLID</p>
+          </motion.div>
+          <motion.div 
           onClick={() => setSelected(1)}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.9 }}

@@ -89,7 +89,8 @@ body {
 
 .img2 {
    /* Indispensable pour placer l'image par rapport au bloc */
-  overflow: hidden;   /* Évite que l'image ne dépasse du cadre */
+  overflow-x: hidden;
+  overflow-y: auto;
 
 }
 
