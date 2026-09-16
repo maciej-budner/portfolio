@@ -82,7 +82,7 @@ export default function Home() {
           onClick={() => setSelected(8)}
           whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }} 
           className="box2 p-3 flex flex-col items-start gap-1 cursor-pointer">
-              <h1 className=" text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">Poissonerie job été (total 4mois)</h1>
+              <h1 className=" text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">Poissonerie job été (total 6mois)</h1>
               <p>Service à la clientèle, entretien du rayon, gestion des stocks, ouverture et fermeture du magasin</p>
           </motion.div>
           <motion.div 

@@ -6,7 +6,7 @@ export default function Experience2(){
             Details d'experience
           </h1>
           <h2 className="inline-block mb-3 px-3 py-1 text-zinc-300 rounded-lg hover:bg-white hover:text-black transition-all text-xs font-bold">
-            Poissonerie job été (total 4mois)</h2>
+            Poissonerie job été (total 6mois)</h2>
           <p className="whitespace-pre-line text-sm leading-relaxed text-zinc-400">
             {`Pour l'été, j'ai travailler chez Lecler en temps que poisonier pendant 4mois. (répartis sur deux périodes estivales)
             Mission:
